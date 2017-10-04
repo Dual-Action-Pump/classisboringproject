@@ -94,7 +94,7 @@ def main(argv):
     elif outtype == 'html':
         device = HTMLConverter(rsrcmgr, outfp, codec=codec, scale=scale,
                                layoutmode=layoutmode, laparams=laparams,
-                               imagewriter=imagewriter, debug=debug)
+                               imagewriter=imagewriter)
     elif outtype == 'tag':
         device = TagExtractor(rsrcmgr, outfp, codec=codec)
     else:
